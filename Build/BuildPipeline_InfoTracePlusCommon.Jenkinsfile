@@ -27,9 +27,9 @@ pipeline {
 						dir("${SCRIPTPATH}"){
 							git([url: "${SCRIPTGITURL}", branch: 'master'])
 						}
-						dir("${ITPGITFOLDER}"){
-							git([url: "${ITPGITURL}", branch: 'master'])
-						}
+						//dir("${ITPGITFOLDER}"){
+							//git([url: "${ITPGITURL}", branch: 'master'])
+						//}
 					}
 					// create log folder 
 					if (!fileExists("${LOGFOLDERPATH}")) bat "chcp 65001 && mkdir \"${LOGFOLDERPATH}\""
