@@ -26,7 +26,7 @@ pipeline {
         }
         stage ('installx86') {
             steps {
-				bat "vcpkg.exe install winpcap:x86-windows
+				bat "vcpkg.exe install winpcap:x86-windows"
 			    bat "vcpkg.exe install winpcap:x86-windows-static"
                 bat "vcpkg.exe install boost:x86-windows"
                 bat "vcpkg.exe install boost:x86-windows-static"
@@ -40,7 +40,7 @@ pipeline {
         }
         stage ('installx64') {
             steps {
-				bat "vcpkg.exe install winpcap:x64
+				bat "vcpkg.exe install winpcap:x64-windows"
                 bat "vcpkg.exe install boost:x64-windows"
                 bat "vcpkg.exe install boost:x64-windows-static"
                 bat "vcpkg.exe install libarchive:x64-windows"
